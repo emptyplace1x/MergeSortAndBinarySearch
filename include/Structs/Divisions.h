@@ -1,4 +1,4 @@
-#include "Array.h"
+#include "Functions/printArray.h"
 
 typedef struct {
     Array array1;

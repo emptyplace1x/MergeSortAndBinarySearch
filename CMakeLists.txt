@@ -7,9 +7,9 @@ set(SOURCES
     src/main.c
     src/MergeSort.c 
     src/BinarySearch.c
-    src/Functions/min.c
     src/Functions/divide.c 
     src/Functions/merge.c
+    src/Functions/printArray.c
 )
 
 add_executable(ms_and_bs ${SOURCES})
