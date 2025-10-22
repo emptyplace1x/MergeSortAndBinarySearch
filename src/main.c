@@ -1,4 +1,6 @@
 #include "MergeSort.h"
+#include "BinarySearch.h"
+#include <stdio.h>
 
 int main() {
     Array to_sort;
@@ -8,6 +10,8 @@ int main() {
     Array sorted = mergeSort(to_sort);
 
     printArray(sorted);
+
+    printf("Element 4 has index %d in array\n", BinarySearch(sorted, 4));
 
     return 0;
 }
