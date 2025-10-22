@@ -4,7 +4,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(ms_and_bs C)
 
 set(SOURCES
-    src/main.c 
+    src/main.c
+    src/MergeSort.c 
+    src/BinarySearch.c
+    src/Functions/min.c
+    src/Functions/divide.c 
+    src/Functions/merge.c
 )
 
 add_executable(ms_and_bs ${SOURCES})
