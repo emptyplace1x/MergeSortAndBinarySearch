@@ -1,20 +1,20 @@
 #include "Functions/divide.h"
 #include <stdlib.h>
 
-Divisions divide(int array[], int length) {
+Divisions divide(Array array) {
     Divisions dividedArrays;
 
-    dividedArrays.len1 = length / 2;
-    dividedArrays.len2 = (length + 1) / 2;
+    dividedArrays.array1.length = array.length / 2;
+    dividedArrays.array2.length = (array.length + 1) / 2;
 
-    dividedArrays.array1 = malloc(dividedArrays.len1 * sizeof(int));
-    dividedArrays.array2 = malloc(dividedArrays.len2 * sizeof(int));
+    dividedArrays.array1.values = malloc(dividedArrays.array1.length * sizeof(int));
+    dividedArrays.array2.values = malloc(dividedArrays.array2.length * sizeof(int));
     
-    for (int i = 0; i < dividedArrays.len1; i++) {
-        dividedArrays.array1[i] = array[i]; 
+    for (int i = 0; i < dividedArrays.array1.length; i++) {
+        dividedArrays.array1.values[i] = array.values[i]; 
     }
-    for (int i = 0; i < dividedArrays.len2; i++) {
-        dividedArrays.array2[i] = array[i + dividedArrays.len1]; 
+    for (int i = 0; i < dividedArrays.array2.length; i++) {
+        dividedArrays.array2.values[i] = array.values[i + dividedArrays.array1.length]; 
     }
 
     return dividedArrays;

@@ -1,3 +1,3 @@
 #include "Structs/Divisions.h"
 
-Divisions divide(int array[], int length);
+Divisions divide(Array array);
