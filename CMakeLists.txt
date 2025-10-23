@@ -10,6 +10,7 @@ set(SOURCES
     src/Functions/divide.c 
     src/Functions/merge.c
     src/Functions/printArray.c
+    src/Input.c
 )
 
 add_executable(ms_and_bs ${SOURCES})
